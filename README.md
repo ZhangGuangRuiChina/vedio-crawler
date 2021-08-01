@@ -58,7 +58,7 @@ node getVedio
 
 - 为了提高效率，本人简单地学习并写了一份bat文件去自动化执行解密和合并操作。bat文件代码（文件有备注解释）：
 
-  - cmd /k "ffmpeg -allowed_extensions ALL -i index.m3u8 -c copy -bsf:a aac_adtstoasc liuxuesheng.mp4&&del /f /s /q *.m3u8&&del /f /s /q *.key&&del /f /s /q *.ts"
+  - cmd /k "ffmpeg -allowed_extensions ALL -i index.m3u8 -c copy -bsf:a aac_adtstoasc XXXX.mp4&&del /f /s /q *.m3u8&&del /f /s /q *.key&&del /f /s /q *.ts"
 
 
 ## 总结
