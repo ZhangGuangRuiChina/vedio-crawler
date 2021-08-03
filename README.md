@@ -1,6 +1,6 @@
 # 视频爬虫
  
-## 开快速开始
+## 快速开始
 ```bash
 # 安装依赖
 npm install request fs --save
@@ -56,14 +56,14 @@ node getVedio
   - ffmpeg -allowed_extensions ALL -i index.m3u8 -c copy -bsf:a aac_adtstoasc XXX.mp4
 
 
-- 为了提高效率，本人简单地学习并写了一份bat文件去自动化执行解密和合并操作。bat文件代码（文件有备注解释）：
+- 为了提高效率，本人简单地学习并写了一份bat文件去自动化执行解密、合并操作。bat文件代码（文件有注解）：
 
   - cmd /k "ffmpeg -allowed_extensions ALL -i index.m3u8 -c copy -bsf:a aac_adtstoasc XXXX.mp4&&del /f /s /q *.m3u8&&del /f /s /q *.key&&del /f /s /q *.ts"
 
 
 ## 总结
 
-- 这里提供爬取加密过的视频思路，如果其他网站的视频未加密或者形式更简单，则可以动态调整getVedio.js中的代码内容。
+- 这里提供爬取加密过的视频思路，如果其他网站的视频未加密或形式更简单，则可以调整getVedio.js中的代码内容。
 
 - 请大家尊重版权，请勿使用技术进行违法的勾当
 
